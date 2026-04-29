@@ -97,7 +97,7 @@ if run_button:
     else:
         with st.spinner("Agents are working..."):
             response = requests.post(
-                "http://localhost:8000/analyze-job",
+                "https://jobhunter-agentic-ai.onrender.com/analyze-job", #"http://localhost:8000/analyze-job",
                 json={
                     "resume_text": resume_text,
                     "job_description": job
